@@ -27,7 +27,17 @@
           ></path>
         </svg>
       </a>
-      <nav>
+
+      <button id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Overlay untuk mobile -->
+      <div class="nav-overlay" id="nav-overlay"></div>
+
+      <nav id="main-nav">
         <a href="/index.html" class="nav-link">Home</a>
         <a href="/index.html#product" class="nav-link">Product</a>
         <a href="/pages/histori.html" class="nav-link">Histori</a>
@@ -40,7 +50,6 @@
         <div class="profile">
           <p id="profileInfo"></p>
           <p id="logout">Logout</p>
-          <!-- <i class="bx bx-user-circle"></i> -->
         </div>
       </nav>
     </header>
@@ -94,6 +103,7 @@
         </div>
       </div>
     </div>
+    <script src="../script/navbar.js" type="module"></script>
     <script src="../script/history.js" type="module"></script>
   </body>
 </html>

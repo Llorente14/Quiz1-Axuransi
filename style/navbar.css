@@ -1,5 +1,5 @@
 header {
-  position: sticky;
+  position: sticky !important;
   top: 0;
   left: 0;
   padding: 1rem 10%;
@@ -129,10 +129,6 @@ main {
 }
 
 @media (max-width: 992px) {
-  html {
-    overflow-x: hidden;
-  }
-
   header {
     padding: 1rem 5%;
   }

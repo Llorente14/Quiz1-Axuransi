@@ -13,7 +13,7 @@
   </head>
   <body data-category="Asuransi Jiwa">
     <header>
-      <a href="/index.html" class="menu-icon">
+      <a href="#axuransi" class="menu-icon">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -27,13 +27,23 @@
           ></path>
         </svg>
       </a>
-      <nav>
+
+      <button id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Overlay untuk mobile -->
+      <div class="nav-overlay" id="nav-overlay"></div>
+
+      <nav id="main-nav">
         <a href="/index.html" class="nav-link">Home</a>
         <a href="/index.html#product" class="nav-link">Product</a>
         <a href="/pages/histori.html" class="nav-link">Histori</a>
         <div class="notAuth">
-          <a href="/pages/login.html" class="cta-login">Login</a>
-          <a href="/pages/signup.html" class="cta-register"
+          <a href="./pages/login.html" class="cta-login">Login</a>
+          <a href="./pages/signup.html" class="cta-register"
             >Belum punya account?</a
           >
         </div>
@@ -164,6 +174,7 @@
       </div>
     </div>
 
+    <script src="../../script/navbar.js" type="module"></script>
     <script src="../../script/detailProduct.js" type="module"></script>
   </body>
 </html>
