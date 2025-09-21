@@ -9,7 +9,9 @@ header {
   z-index: 9999;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   overflow-x: hidden;
+  overflow-y: clip;
 }
 
 header .menu-icon {
@@ -18,8 +20,8 @@ header .menu-icon {
   width: 50px;
   height: 50px;
   flex-shrink: 0;
-  fill: var(--color-primary-content);
 }
+
 header .menu-icon svg {
   flex-shrink: 0;
   width: 50px;
@@ -38,12 +40,14 @@ header nav a {
   font-weight: 500;
   text-decoration: none;
 }
+
 header nav a:hover {
   text-decoration: underline;
 }
 
 header nav .notAuth {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -55,17 +59,123 @@ header nav .profile {
   color: var(--color-base-200);
   font-weight: 600;
   cursor: default;
+  gap: 2rem;
 }
 
-header nav .profile i {
-  cursor: pointer;
-  font-size: 35px;
-  fill: var(--color-primary-content);
-  color: var(--color-primary-content);
+header nav .profile #logout {
+  text-decoration: none;
+  color: var(--color-base-200);
 }
-header nav .profile i:hover {
+
+header nav .profile #logout:hover {
   cursor: pointer;
-  font-size: 35px;
-  fill: var(--color-base-100);
   color: var(--color-base-100);
+  text-decoration: underline;
+}
+
+#menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 10000;
+  background: none;
+  border: none;
+}
+
+#menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-base-100);
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+#menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+main {
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 1rem 5%;
+  }
+
+  #menu-toggle {
+    display: flex;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.7rem;
+    position: fixed;
+    height: max-content;
+    width: 250px;
+    top: 0;
+    right: -250px;
+    padding: 5rem 1.5rem;
+    background-color: var(--color-primary);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+  }
+
+  header nav.active {
+    right: 0;
+  }
+
+  .nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+  }
+
+  .nav-overlay.active {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
 }

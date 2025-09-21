@@ -72,6 +72,7 @@ body {
 .home .title h1 {
   margin-bottom: 1em;
   color: var(--color-neutral);
+  font-size: clamp(0.5em, 26px, 30px);
 }
 .home .title p {
   line-height: 1.2rem;
@@ -141,40 +142,6 @@ body {
   grid-column-start: 4;
   grid-row-start: 2;
 }
-
-/* .home .cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-  padding: 2rem 4rem;
-  background-color: var(--color-base-100);
-}
-
-.cta .cta-register {
-  text-decoration: none;
-  list-style: none;
-  padding: 1rem 2rem;
-
-  color: var(--color-base-content);
-}
-.cta .cta-register:hover {
-  text-decoration: underline;
-  list-style: none;
-  padding: 1rem 2rem;
-
-  color: var(--color-base-content);
-  opacity: 1;
-}
-.cta .cta-login {
-  text-decoration: none;
-  padding: 1rem 2rem;
-  background-color: var(--color-primary);
-  color: var(--color-primary-content);
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 0.5rem;
-} */
 
 /* Product Wrapper */
 .product-container {
@@ -502,6 +469,95 @@ footer .contact-us ul li a {
 }
 
 @media (max-width: 768px) {
+  .home {
+    margin-bottom: 4rem;
+  }
+  .home .sphere {
+    width: 110%;
+    height: 300px;
+  }
+
+  .home .title p {
+    height: max-content;
+    padding: 1rem;
+    background-color: var(--color-base-100);
+    border-radius: 4px;
+    line-height: 0.9rem;
+    font-size: 14px;
+    color: var(--color-neutral);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    border: solid 2px var(--color-base-300);
+  }
+
+  .about .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-container {
+    padding: 0 1.5rem;
+    margin-bottom: 6rem;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .card {
+    flex-direction: column;
+    max-width: 500px;
+    overflow-x: hidden;
+  }
+
+  .card .card-image {
+    width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    overflow-y: hidden;
+  }
+  .card .card-image img {
+    object-position: center;
+  }
+
+  .card .card-info .card-text {
+    padding: 1.5rem;
+  }
+
+  .card .card-info .card-cta {
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  .carousell {
+    max-width: 500px;
+    padding: 1.5rem;
+  }
+
+  .carousell .left-slider,
+  .carousell .right-slider {
+    display: none;
+  }
+
+  .swiper .product-overview {
+    width: 220px;
+    gap: 1rem;
+  }
+
+  .top .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .swiper .product-overview .top .name-product {
+    font-size: 0.9rem;
+  }
+
+  .bottom ul li {
+    font-size: 0.8rem;
+    padding-left: 1.25rem;
+  }
+
+  .bottom ul li::before {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
   footer {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -525,5 +581,31 @@ footer .contact-us ul li a {
 
   footer .contact-us {
     padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    max-width: 95dvw;
+  }
+  .about .card-container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .carousell {
+    max-width: 300px;
+    padding: 1.5rem;
+  }
+  .card {
+    max-width: 300px;
+  }
+  .card .card-image {
+    width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    overflow-y: hidden;
+  }
+  .card .card-image img {
+    object-position: center;
   }
 }
