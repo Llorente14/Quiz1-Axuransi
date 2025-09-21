@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(97.466% 0.011 259.822);
+  --color-base-300: oklch(93.268% 0.016 262.751);
+  --color-base-content: oklch(41.886% 0.053 255.824);
+  --color-primary: oklch(56.86% 0.255 257.57);
+  --color-primary-content: oklch(91.372% 0.051 257.57);
+  --color-secondary: oklch(42.551% 0.161 282.339);
+  --color-secondary-content: oklch(88.51% 0.032 282.339);
+  --color-accent: oklch(59.939% 0.191 335.171);
+  --color-accent-content: oklch(11.988% 0.038 335.171);
+  --color-neutral: oklch(19.616% 0.063 257.651);
+  --color-neutral-content: oklch(83.923% 0.012 257.651);
+  --color-info: oklch(88.127% 0.085 214.515);
+  --color-info-content: oklch(17.625% 0.017 214.515);
+  --color-success: oklch(80.494% 0.077 197.823);
+  --color-success-content: oklch(16.098% 0.015 197.823);
+  --color-warning: oklch(89.172% 0.045 71.47);
+  --color-warning-content: oklch(17.834% 0.009 71.47);
+  --color-error: oklch(73.092% 0.11 20.076);
+  --color-error-content: oklch(14.618% 0.022 20.076);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-base-200);
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- Gaya Dasar yang Disesuaikan --- */
+
+.page-title {
+  /* Menggunakan clamp() agar font responsif */
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-neutral);
+  margin-bottom: 1.5rem;
+  padding-left: 10px;
+}
+
+.terms-container {
+  background-color: var(--color-base-100);
+  border-radius: 12px;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+.terms-container section {
+  margin-bottom: 2.5rem;
+}
+
+.terms-container h2 {
+  /* Ukuran sub-judul sedikit diperkecil */
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  font-weight: 600;
+  color: var(--color-neutral);
+  margin-bottom: 1rem;
+}
+
+.terms-container p,
+.terms-container li {
+  /* Ukuran font utama diperkecil agar lebih nyaman dibaca */
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.8;
+  color: #495057;
+  margin-bottom: 1rem;
+}
+
+.terms-container .intro {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-weight: 600;
+  color: var(--color-neutral);
+}
+
+.terms-container strong {
+  font-weight: 600;
+  color: #212529;
+}
+
+.terms-container ol,
+.terms-container ul {
+  padding-left: 1.5rem;
+}
+
+.terms-container ul li {
+  list-style-type: disc;
+}
+
+/* --- [BARU] Media Query untuk Layar Ponsel (768px ke bawah) --- */
+@media (max-width: 768px) {
+  .page-title {
+    margin-bottom: 1rem;
+    font-size: 1.6rem; /* Ukuran judul lebih kecil di mobile */
+  }
+
+  .terms-container {
+    padding: 1.5rem 1.2rem; /* Padding lebih kecil agar tidak terlalu mepet */
+  }
+
+  .terms-container section {
+    margin-bottom: 2rem; /* Jarak antar bagian dikurangi */
+  }
+
+  .terms-container h2 {
+    font-size: 1.2rem; /* Ukuran sub-judul lebih kecil */
+  }
+
+  .terms-container p,
+  .terms-container li {
+    font-size: 0.95rem; /* Ukuran teks utama sedikit diperkecil */
+    line-height: 1.7;
+  }
+
+  .terms-container ol,
+  .terms-container ul {
+    padding-left: 1.2rem; /* Indentasi list dikurangi */
+  }
+}

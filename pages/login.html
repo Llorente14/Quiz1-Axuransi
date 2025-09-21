@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication</title>
+    <link rel="stylesheet" href="../style/formAuth.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box login">
+        <form action="" id="loginForm">
+          <h1>Login</h1>
+          <p id="errMsgLogin"></p>
+          <div class="input-box">
+            <input id="loginEmail" type="email" placeholder="Gmail" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input
+              id="loginPassword"
+              type="password"
+              placeholder="Kata Sandi"
+              required
+            />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </div>
+      <div class="form-box register">
+        <form action="" id="registerForm">
+          <h1>Sign up</h1>
+          <p id="errMsg"></p>
+          <div class="input-box">
+            <input
+              name="username"
+              id="username"
+              type="text"
+              placeholder="Nama Lengkap"
+            />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input name="email" id="email" type="email" placeholder="Gmail" />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input
+              name="notelp"
+              id="noTelp"
+              type="tel"
+              placeholder="No. Telephone"
+              pattern="[0-9]*"
+            />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input
+              name="password"
+              id="password"
+              type="password"
+              placeholder="Kata Sandi"
+            />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <div class="input-box">
+            <input
+              name="cpassword"
+              id="cpassword"
+              type="password"
+              placeholder="Konfirmasi Kata Sandi"
+            />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+      </div>
+      <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+          <h1>Hello, Welcome!</h1>
+          <p>Don't have an account?</p>
+          <button class="btn register-btn">Register</button>
+          <p>Back to <a href="/index.html"> Home?</a></p>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <h1>Welcome Back!</h1>
+          <p>Already have an account?</p>
+          <button class="btn login-btn">Login</button>
+          <p>Back to <a href="/index.html"> Home?</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="../script/auth.js" type="module"></script>
+  </body>
+</html>
+<!-- <form action="">
+      <p class="form-title">Hi, silahkan Login</p>
+
+      <input type="email" name="email" id="" />
+
+      <input type="password" name="password" id="" />
+
+      <button type="submit">Login</button>
+      <p class="text-back">
+        Belum punya akun?
+        <span><a href="../index.html">Sign up dulu!</a></span>
+      </p>
+    </form> -->

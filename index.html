@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axusransi</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+  </head>
+  <body id="axuransi">
+    <header>
+      <a href="#axuransi" class="menu-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M 25.003906 2.3339844 C 24.825656 2.3339844 24.646781 2.3815625 24.488281 2.4765625 L 5.484375 13.896484 C 5.183375 14.077484 5 14.402906 5 14.753906 L 5 35.222656 C 5 35.571656 5.1805156 35.894172 5.4785156 36.076172 L 10.478516 39.128906 C 11.144516 39.535906 12 39.055391 12 38.275391 L 12 18.113281 L 25 10.173828 L 38 18.113281 L 38 38.314453 C 38 39.094453 38.853531 39.574922 39.519531 39.169922 L 44.519531 36.130859 C 44.818531 35.948859 45 35.625391 45 35.275391 L 45 14.753906 C 45 14.402906 44.816625 14.077484 44.515625 13.896484 L 25.517578 2.4765625 C 25.359078 2.3815625 25.182156 2.3339844 25.003906 2.3339844 z M 21.998047 17.175781 C 21.824234 17.175906 21.645016 17.222469 21.478516 17.324219 L 16.478516 20.378906 C 16.180516 20.560906 16 20.882469 16 21.230469 L 16 42.023438 C 16 42.374437 16.183375 42.699859 16.484375 42.880859 L 24.488281 47.689453 C 24.805281 47.880453 25.200578 47.879453 25.517578 47.689453 L 33.515625 42.882812 C 33.816625 42.701813 34 42.376391 34 42.025391 L 34 21.230469 C 34 20.882469 33.819484 20.559906 33.521484 20.378906 L 28.521484 17.324219 C 27.855484 16.917219 27 17.396734 27 18.177734 L 27 38.771484 L 25 39.994141 L 23 38.771484 L 23 18.177734 C 23 17.591984 22.519484 17.175406 21.998047 17.175781 z"
+          ></path>
+        </svg>
+      </a>
+      <nav>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/index.html#product" class="nav-link">Product</a>
+        <a href="/pages/histori.html" class="nav-link">Histori</a>
+        <div class="notAuth">
+          <a href="./pages/login.html" class="cta-login">Login</a>
+          <a href="./pages/signup.html" class="cta-register"
+            >Belum punya account?</a
+          >
+        </div>
+        <div class="profile">
+          <p id="profileInfo"></p>
+          <p id="logout">Logout</p>
+          <!-- <i class="bx bx-user-circle"></i> -->
+        </div>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <span class="sphere"></span>
+      <div class="title">
+        <h1>Bersama Axuransi Membangun negeri</h1>
+        <p>
+          Asuransi membantu masyarakat melindungi diri dari risiko tak terduga,
+          seperti kesehatan, pendidikan, dan finansial. Dengan perlindungan yang
+          tepat, setiap orang dapat lebih tenang merencanakan masa depan serta
+          ikut berkontribusi dalam pembangunan negeri yang lebih kuat dan
+          berkelanjutan.
+        </p>
+      </div>
+    </section>
+    <section class="about">
+      <h1 class="title">Tentang Kami</h1>
+      <div class="card-container">
+        <div class="card" id="#aboutCard1">
+          <div class="img-wrapper">
+            <img src="./images/Man-Terpercaya.png" alt="" srcset="" />
+          </div>
+          <div class="info">
+            <h4 class="sub-title">Terpercaya</h4>
+            <p>
+              Kami bermitra dengan perusahaan asuransi resmi dan berlisensi
+              sehingga setiap layanan terjamin keamanannya. Kepercayaan
+              pelanggan adalah prioritas kami dalam memberikan solusi
+              perlindungan terbaik.
+            </p>
+          </div>
+        </div>
+        <div class="card" id="#aboutCard2">
+          <div class="img-wrapper">
+            <img src="./images/Man-Mudah.png" alt="" srcset="" />
+          </div>
+          <div class="info">
+            <h4 class="sub-title">Mudah</h4>
+            <p>
+              Proses pencarian, perbandingan, hingga pembelian asuransi dapat
+              dilakukan hanya dalam beberapa klik. Dengan tampilan yang
+              sederhana, siapa pun bisa menemukan produk yang sesuai kebutuhan.
+            </p>
+          </div>
+        </div>
+        <div class="card" id="#aboutCard3">
+          <div class="img-wrapper">
+            <img src="./images/Girl-lengkap.png" alt="" srcset="" />
+          </div>
+          <div class="info">
+            <h4 class="sub-title">Lengkap</h4>
+            <p>
+              Marketplace kami menyediakan pilihan asuransi kesehatan, jiwa, dan
+              mobil dari berbagai penyedia terpercaya. Semua tersedia dalam satu
+              platform sehingga memudahkan Anda memilih tanpa perlu berpindah
+              tempat.
+            </p>
+          </div>
+        </div>
+        <div class="card" id="#aboutCard4">
+          <div class="img-wrapper">
+            <img src="./images/Man-Terjangkau.png" alt="" srcset="" />
+          </div>
+          <div class="info">
+            <h4 class="sub-title">Terjangkau</h4>
+            <p>
+              Kami menawarkan berbagai produk dengan premi yang fleksibel dan
+              sesuai anggaran. Dengan begitu, perlindungan maksimal tetap bisa
+              didapat tanpa membebani keuangan Anda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-container" id="product">
+      <div class="card carousell">
+        <div class="left-slider" id="leftSlider">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.2071 6.29289C15.5976 6.68342 15.5976 7.31658 15.2071 7.70711L10.9142 12L15.2071 16.2929C15.5976 16.6834 15.5976 17.3166 15.2071 17.7071C14.8166 18.0976 14.1834 18.0976 13.7929 17.7071L8.79289 12.7071C8.40237 12.3166 8.40237 11.6834 8.79289 11.2929L13.7929 6.29289C14.1834 5.90237 14.8166 5.90237 15.2071 6.29289Z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <p class="name">Produk asuransi pilihan</p>
+        <div class="swiper">
+          <a
+            href="./pages/detail-asuransi-kesehatan.html"
+            class="product-overview"
+          >
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Kesehatan.png"
+                  alt="Logo asuransi kesehatan"
+                />
+              </div>
+              <p class="name-product">Prudential PRUPrime Healthcare</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Perlindungan rawat inap hingga seluruh dunia</li>
+                <li>Fleksibel pilih kamar sesuai kebutuhan</li>
+                <li>Cashless di rumah sakit rekanan</li>
+              </ul>
+            </div>
+          </a>
+
+          <a href="./pages/detail-asuransi-mobil.html" class="product-overview">
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Mobil.png"
+                  alt="Logo asuransi mobil"
+                />
+              </div>
+              <p class="name-product">ASTRA GFX Car</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Fasilitas cicilan tetap</li>
+                <li>BNI Rewards Point</li>
+                <li>Rp2.500 = 1 reward point</li>
+              </ul>
+            </div>
+          </a>
+
+          <a href="./pages/detail-asuransi-jiwa.html" class="product-overview">
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Jiwa.png"
+                  alt="Logo asuransi jiwa"
+                />
+              </div>
+              <p class="name-product">Allianz LifeLink</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Perlindungan jiwa seumur hidup</li>
+                <li>Manfaat investasi yang fleksibel</li>
+                <li>Santunan kematian dan cacat tetap total</li>
+              </ul>
+            </div>
+          </a>
+
+          <a
+            href="./pages/detail-asuransi-kesehatan.html"
+            class="product-overview"
+          >
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Kesehatan.png"
+                  alt="Logo asuransi kesehatan"
+                />
+              </div>
+              <p class="name-product">Manulife MiUltimate HealthCare</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Perlindungan rawat jalan & rawat inap</li>
+                <li>Manfaat tambahan persalinan</li>
+                <li>Jaringan rumah sakit internasional</li>
+              </ul>
+            </div>
+          </a>
+
+          <a href="./pages/detail-asuransi-jiwa.html" class="product-overview">
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Jiwa.png"
+                  alt="Logo asuransi jiwa"
+                />
+              </div>
+              <p class="name-product">Prudential PRULink Assurance</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Kombinasi asuransi dan investasi</li>
+                <li>Potensi hasil investasi optimal</li>
+                <li>Perlindungan finansial jangka panjang</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="right-slider" id="rightSlider">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.79289 6.29289C9.18342 5.90237 9.81658 5.90237 10.2071 6.29289L15.2071 11.2929C15.5976 11.6834 15.5976 12.3166 15.2071 12.7071L10.2071 17.7071C9.81658 18.0976 9.18342 18.0976 8.79289 17.7071C8.40237 17.3166 8.40237 16.6834 8.79289 16.2929L13.0858 12L8.79289 7.70711C8.40237 7.31658 8.40237 6.68342 8.79289 6.29289Z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="card carousell">
+        <div class="left-slider" id="leftSlider">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.2071 6.29289C15.5976 6.68342 15.5976 7.31658 15.2071 7.70711L10.9142 12L15.2071 16.2929C15.5976 16.6834 15.5976 17.3166 15.2071 17.7071C14.8166 18.0976 14.1834 18.0976 13.7929 17.7071L8.79289 12.7071C8.40237 12.3166 8.40237 11.6834 8.79289 11.2929L13.7929 6.29289C14.1834 5.90237 14.8166 5.90237 15.2071 6.29289Z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+
+        <p class="name">Asuransi Mobil</p>
+
+        <div class="swiper">
+          <a href="./pages/detail-asuransi-mobil.html" class="product-overview">
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Mobil.png"
+                  alt="Logo asuransi mobil"
+                />
+              </div>
+              <p class="name-product">Astra Garda Oto</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Perlindungan all risk & TLO</li>
+                <li>Jaringan bengkel resmi luas</li>
+                <li>24 jam layanan darurat</li>
+              </ul>
+            </div>
+          </a>
+
+          <a href="./pages/detail-asuransi-mobil.html" class="product-overview">
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Mobil.png"
+                  alt="Logo asuransi mobil"
+                />
+              </div>
+              <p class="name-product">Sinarmas Simas Mobil</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Premi kompetitif</li>
+                <li>Jaminan perbaikan resmi</li>
+                <li>Tersedia layanan derek gratis</li>
+              </ul>
+            </div>
+          </a>
+
+          <a href="./pages/detail-asuransi-mobil.html" class="product-overview">
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Mobil.png"
+                  alt="Logo asuransi mobil"
+                />
+              </div>
+              <p class="name-product">AXA SmartDrive</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Perlindungan menyeluruh (all risk)</li>
+                <li>Perlindungan untuk kecelakaan pengemudi</li>
+                <li>Layanan bantuan klaim mudah</li>
+              </ul>
+            </div>
+          </a>
+
+          <a href="./pages/detail-asuransi-mobil.html" class="product-overview">
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Mobil.png"
+                  alt="Logo asuransi mobil"
+                />
+              </div>
+              <p class="name-product">Zurich Autocillin</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Opsi all risk & TLO</li>
+                <li>Aplikasi mobile untuk klaim cepat</li>
+                <li>Fasilitas mobil pengganti</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+
+        <div class="right-slider" id="rightSlider">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.79289 6.29289C9.18342 5.90237 9.81658 5.90237 10.2071 6.29289L15.2071 11.2929C15.5976 11.6834 15.5976 12.3166 15.2071 12.7071L10.2071 17.7071C9.81658 18.0976 9.18342 18.0976 8.79289 17.7071C8.40237 17.3166 8.40237 16.6834 8.79289 16.2929L13.0858 12L8.79289 7.70711C8.40237 7.31658 8.40237 6.68342 8.79289 6.29289Z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="card carousell">
+        <div class="left-slider">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M15.2071 6.29289C15.5976 6.68342 15.5976 7.31658 15.2071 7.70711L10.9142 12L15.2071 16.2929C15.5976 16.6834 15.5976 17.3166 15.2071 17.7071C14.8166 18.0976 14.1834 18.0976 13.7929 17.7071L8.79289 12.7071C8.40237 12.3166 8.40237 11.6834 8.79289 11.2929L13.7929 6.29289C14.1834 5.90237 14.8166 5.90237 15.2071 6.29289Z"
+            ></path>
+          </svg>
+        </div>
+
+        <p class="name">Asuransi Kesehatan</p>
+
+        <div class="swiper">
+          <a
+            href="./pages/detail-asuransi-kesehatan.html"
+            class="product-overview"
+          >
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Kesehatan.png"
+                  alt="Logo asuransi kesehatan"
+                />
+              </div>
+              <p class="name-product">Prudential PRUPrime Healthcare</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Perlindungan rawat inap hingga seluruh dunia</li>
+                <li>Fleksibel pilih kamar sesuai kebutuhan</li>
+                <li>Cashless di rumah sakit rekanan</li>
+              </ul>
+            </div>
+          </a>
+
+          <a
+            href="./pages/detail-asuransi-kesehatan.html"
+            class="product-overview"
+          >
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Kesehatan.png"
+                  alt="Logo asuransi kesehatan"
+                />
+              </div>
+              <p class="name-product">Manulife MiUltimate HealthCare</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Perlindungan rawat jalan & rawat inap</li>
+                <li>Manfaat tambahan persalinan</li>
+                <li>Jaringan rumah sakit internasional</li>
+              </ul>
+            </div>
+          </a>
+
+          <a
+            href="./pages/detail-asuransi-kesehatan.html"
+            class="product-overview"
+          >
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Kesehatan.png"
+                  alt="Logo asuransi kesehatan"
+                />
+              </div>
+              <p class="name-product">Allianz SmartHealth Maxi Violet</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Perlindungan rawat inap lengkap</li>
+                <li>Manfaat santunan harian</li>
+                <li>Premi kompetitif dengan fleksibilitas tinggi</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+
+        <div class="right-slider">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.79289 6.29289C9.18342 5.90237 9.81658 5.90237 10.2071 6.29289L15.2071 11.2929C15.5976 11.6834 15.5976 12.3166 15.2071 12.7071L10.2071 17.7071C9.81658 18.0976 9.18342 18.0976 8.79289 17.7071C8.40237 17.3166 8.40237 16.6834 8.79289 16.2929L13.0858 12L8.79289 7.70711C8.40237 7.31658 8.40237 6.68342 8.79289 6.29289Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div class="card carousell">
+        <div class="left-slider">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M15.2071 6.29289C15.5976 6.68342 15.5976 7.31658 15.2071 7.70711L10.9142 12L15.2071 16.2929C15.5976 16.6834 15.5976 17.3166 15.2071 17.7071C14.8166 18.0976 14.1834 18.0976 13.7929 17.7071L8.79289 12.7071C8.40237 12.3166 8.40237 11.6834 8.79289 11.2929L13.7929 6.29289C14.1834 5.90237 14.8166 5.90237 15.2071 6.29289Z"
+            ></path>
+          </svg>
+        </div>
+
+        <p class="name">Asuransi Jiwa</p>
+
+        <div class="swiper">
+          <a href="./pages/detail-asuransi-jiwa.html" class="product-overview">
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Jiwa.png"
+                  alt="Logo asuransi jiwa"
+                />
+              </div>
+              <p class="name-product">Allianz LifeLink</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Perlindungan jiwa seumur hidup</li>
+                <li>Manfaat investasi yang fleksibel</li>
+                <li>Santunan kematian dan cacat tetap total</li>
+              </ul>
+            </div>
+          </a>
+
+          <a href="./pages/detail-asuransi-jiwa.html" class="product-overview">
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Jiwa.png"
+                  alt="Logo asuransi jiwa"
+                />
+              </div>
+              <p class="name-product">Manulife MiPilihan Proteksi Jiwa</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Premi terjangkau dengan perlindungan maksimal</li>
+                <li>Pilihan manfaat tambahan (rider)</li>
+                <li>Pencairan dana tunai saat dibutuhkan</li>
+              </ul>
+            </div>
+          </a>
+
+          <a href="./pages/detail-asuransi-jiwa.html" class="product-overview">
+            <div class="top">
+              <div class="logo">
+                <img
+                  src="./images/Asuransi-Jiwa.png"
+                  alt="Logo asuransi jiwa"
+                />
+              </div>
+              <p class="name-product">BRI Life Proteksi Jiwa</p>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Perlindungan dasar jiwa yang sederhana</li>
+                <li>Premi ringan, cocok untuk pemula</li>
+                <li>Proses pengajuan yang mudah</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+
+        <div class="right-slider">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.79289 6.29289C9.18342 5.90237 9.81658 5.90237 10.2071 6.29289L15.2071 11.2929C15.5976 11.6834 15.5976 12.3166 15.2071 12.7071L10.2071 17.7071C9.81658 18.0976 9.18342 18.0976 8.79289 17.7071C8.40237 17.3166 8.40237 16.6834 8.79289 16.2929L13.0858 12L8.79289 7.70711C8.40237 7.31658 8.40237 6.68342 8.79289 6.29289Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="./images/Asuransi-Mobil.png" alt="" srcset="" />
+        </div>
+        <div class="card-info">
+          <div class="card-text">
+            <p class="card-title">Asuransi Mobil</p>
+            <p class="card-sub">
+              Jangan biarkan risiko jalanan mengancam kendaraan Anda. Platform
+              kami menghubungkan Anda dengan berbagai penawaran asuransi mobil
+              terbaik.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a href="./pages/productDetail.html">Cek</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="./images/Asuransi-Kesehatan.png" alt="" srcset="" />
+        </div>
+        <div class="card-info">
+          <div class="card-text">
+            <p class="card-title">Asuransi Kesehatan</p>
+            <p class="card-sub">
+              Jangan biarkan biaya medis yang tak terduga menjadi beban.
+              Platform kami menghubungkan Anda dengan berbagai penawaran
+              asuransi kesehatan terbaik.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a href="./pages/productDetail.html">Cek</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="./images/Asuransi-Jiwa.png" alt="" srcset="" />
+        </div>
+        <div class="card-info">
+          <div class="card-text">
+            <p class="card-title">Asuransi Jiwa</p>
+            <p class="card-sub">
+              Jangan biarkan ketidakpastian masa depan mengkhawatirkan keluarga
+              Anda. Platform kami menghubungkan Anda dengan berbagai penawaran
+              asuransi jiwa terbaik.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a href="./pages/productDetail.html">Cek</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="logo">
+        <div class="container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0,0,256,256"
+          >
+            <g transform="translate(70.4,70.4) scale(0.4,0.4)">
+              <g
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g transform="translate(-152.576,-8.10576) scale(5.12,5.12)">
+                  <path
+                    d="M25.00391,2.33398c-0.17825,0 -0.35712,0.04758 -0.51562,0.14258l-19.00391,11.41992c-0.301,0.181 -0.48437,0.50642 -0.48437,0.85742v20.46875c0,0.349 0.18052,0.67152 0.47852,0.85352l5,3.05273c0.666,0.407 1.52148,-0.07352 1.52148,-0.85352v-20.16211l13,-7.93945l13,7.93945v20.20117c0,0.78 0.85353,1.26047 1.51953,0.85547l5,-3.03906c0.299,-0.182 0.48047,-0.50547 0.48047,-0.85547v-20.52148c0,-0.351 -0.18337,-0.67642 -0.48437,-0.85742l-18.99805,-11.41992c-0.1585,-0.095 -0.33542,-0.14258 -0.51367,-0.14258zM21.99805,17.17578c-0.17381,0.00013 -0.35303,0.04669 -0.51953,0.14844l-5,3.05469c-0.298,0.182 -0.47852,0.50356 -0.47852,0.85156v20.79297c0,0.351 0.18338,0.67642 0.48438,0.85742l8.00391,4.80859c0.317,0.191 0.7123,0.19 1.0293,0l7.99805,-4.80664c0.301,-0.181 0.48438,-0.50642 0.48438,-0.85742v-20.79492c0,-0.348 -0.18052,-0.67056 -0.47852,-0.85156l-5,-3.05469c-0.666,-0.407 -1.52148,0.07251 -1.52148,0.85352v20.59375l-2,1.22266l-2,-1.22266v-20.59375c0,-0.58575 -0.48052,-1.00233 -1.00195,-1.00195z"
+                  ></path>
+                </g>
+              </g>
+              <g
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g>
+                  <path
+                    d="M118.901,144.447v2.08h-15.91v-2.08c1.72,-0.76667 3.44,-1.34 5.16,-1.72v0l18.14,-47.24h2.07l18.14,47.24c0.95333,0.19333 1.89667,0.41 2.83,0.65c0.93333,0.23333 1.80667,0.59 2.62,1.07v0v2.08h-18.35v-2.08c0.95333,-0.38 1.93333,-0.71333 2.94,-1c1,-0.28667 1.98,-0.52667 2.94,-0.72v0l-4.88,-13.12h-17.13l-4.73,13.12c2.00667,0.28667 4.06,0.86 6.16,1.72zM124.421,110.827l-5.52,15.06h14.48l-5.66,-15.2l-1.36,-6.16h-0.15zM183.131,114.267l-9.82,13.05l11.32,15.7c0.67333,0.24 1.33,0.49 1.97,0.75c0.64667,0.26 1.25667,0.58333 1.83,0.97v0v1.79h-14.69v-1.72c0.66667,-0.38 1.28667,-0.72667 1.86,-1.04c0.57333,-0.31333 1.14667,-0.56333 1.72,-0.75v0l-7.95,-11.76l-8.03,11.76c0.66667,0.24 1.28667,0.50333 1.86,0.79c0.57333,0.28667 1.14667,0.59667 1.72,0.93v0v1.79h-12.26v-1.79c1.34,-0.81333 2.68,-1.38667 4.02,-1.72v0l10.68,-14.27l-10.75,-14.48c-0.67333,-0.23333 -1.28333,-0.48333 -1.83,-0.75c-0.55333,-0.26 -1.11667,-0.58333 -1.69,-0.97v0v-1.86h14.41v1.79c-0.57333,0.38667 -1.13333,0.73333 -1.68,1.04c-0.55333,0.31333 -1.16333,0.56333 -1.83,0.75v0l7.45,10.76l7.32,-10.76c-1.62667,-0.52 -2.82333,-1.09333 -3.59,-1.72v0v-1.86h11.97v1.86c-0.90667,0.62667 -2.24333,1.2 -4.01,1.72zM194.671,132.337v0c0,-3.01333 0.07,-5.96667 0.21,-8.86c0.14667,-2.88667 0.22,-5.76333 0.22,-8.63v0l-4.73,-0.58v-1.86c1.52667,-0.57333 3.09,-1.07333 4.69,-1.5c1.6,-0.43333 3.16667,-0.79333 4.7,-1.08v0h1.79c0,3.58667 -0.07333,7.14667 -0.22,10.68c-0.14,3.53333 -0.21,7.04667 -0.21,10.54v0c0,1.86 0.10667,3.53 0.32,5.01c0.22,1.48667 0.60333,2.73 1.15,3.73c0.54667,1.00667 1.3,1.78333 2.26,2.33c0.95333,0.55333 2.17,0.83 3.65,0.83v0c2.15333,0 3.95667,-0.77667 5.41,-2.33c1.46,-1.55333 2.59667,-3.57333 3.41,-6.06v0v-19.71l-4.66,-0.58v-1.86c1.48,-0.57333 3.02,-1.07333 4.62,-1.5c1.60667,-0.43333 3.17333,-0.79333 4.7,-1.08v0h1.79v32.61l4.73,0.58v1.5c-1.38667,0.62 -2.78333,1.17 -4.19,1.65c-1.41333,0.48 -2.88333,0.84 -4.41,1.08v0h-1.79l-0.5,-8.53h-0.29c-0.24,1 -0.65667,2.01333 -1.25,3.04c-0.6,1.02667 -1.37667,1.96 -2.33,2.8c-0.96,0.83333 -2.05,1.51333 -3.27,2.04c-1.21333,0.52667 -2.53667,0.79 -3.97,0.79v0c-1.91333,0 -3.6,-0.22667 -5.06,-0.68c-1.45333,-0.45333 -2.68333,-1.25333 -3.69,-2.4c-1,-1.14667 -1.76333,-2.69 -2.29,-4.63c-0.52667,-1.93333 -0.79,-4.38 -0.79,-7.34zM257.321,116.067h-9.54c-0.52,0.28667 -1.17667,0.87 -1.97,1.75c-0.78667,0.88667 -1.49,2.19 -2.11,3.91v0v21.29c0.95333,0.09333 1.91,0.27333 2.87,0.54c0.95333,0.26 1.90667,0.65333 2.86,1.18v0v1.79h-16.91v-1.79c0.86,-0.48 1.67,-0.84 2.43,-1.08c0.76667,-0.24 1.53333,-0.45333 2.3,-0.64v0v-28.17l-4.73,-0.58v-1.86c1.52667,-0.66667 3.10333,-1.20333 4.73,-1.61c1.62,-0.40667 3.17333,-0.73 4.66,-0.97v0h1.79v7.6h0.28c0.43333,-0.96 1.04333,-1.91667 1.83,-2.87c0.79333,-0.95333 1.70333,-1.81333 2.73,-2.58c1.02667,-0.76667 2.15,-1.35333 3.37,-1.76c1.21333,-0.40667 2.46667,-0.53667 3.76,-0.39v0c0.33333,0.62 0.63,1.3 0.89,2.04c0.26667,0.74 0.52,1.51667 0.76,2.33v0zM287.211,137.137v0c0,1.05333 0.02333,1.96 0.07,2.72c0.04667,0.76667 0.09333,1.58 0.14,2.44v0l4.95,0.72v1.5c-1.19333,0.62 -2.52,1.17 -3.98,1.65c-1.46,0.48 -2.85667,0.84 -4.19,1.08v0h-1.79c-0.48,-1.1 -0.77,-2.30667 -0.87,-3.62c-0.09333,-1.31333 -0.16333,-2.76 -0.21,-4.34v0h-0.36c-0.19333,0.95333 -0.56333,1.92 -1.11,2.9c-0.54667,0.98 -1.26333,1.85333 -2.15,2.62c-0.88667,0.76667 -1.92667,1.38667 -3.12,1.86c-1.19333,0.48 -2.55333,0.72 -4.08,0.72v0c-2.92,0 -5.3,-0.88333 -7.14,-2.65c-1.84,-1.76667 -2.76,-4.08333 -2.76,-6.95v0c0,-2.2 0.44333,-4.00667 1.33,-5.42c0.88667,-1.40667 2.19,-2.51667 3.91,-3.33c1.72,-0.81333 3.84667,-1.4 6.38,-1.76c2.53333,-0.35333 5.47,-0.62667 8.81,-0.82v0c0.19333,-2.05333 0.25333,-3.90667 0.18,-5.56c-0.07333,-1.64667 -0.33667,-3.05333 -0.79,-4.22c-0.45333,-1.17333 -1.12,-2.08333 -2,-2.73c-0.88667,-0.64667 -2.04667,-0.97 -3.48,-0.97v0c-0.66667,0 -1.42,0.03667 -2.26,0.11c-0.83333,0.07333 -1.65667,0.27667 -2.47,0.61v0l-3.37,8.6h-1.86c-0.48,-1.43333 -0.9,-2.91333 -1.26,-4.44c-0.36,-1.53333 -0.58667,-3.04 -0.68,-4.52v0c1.82,-1.1 3.84,-1.96 6.06,-2.58c2.22,-0.62 4.69333,-0.93 7.42,-0.93v0c2.43333,0 4.38,0.34667 5.84,1.04c1.46,0.69333 2.57,1.59 3.33,2.69c0.76667,1.1 1.27,2.31667 1.51,3.65c0.24,1.34 0.36,2.68 0.36,4.02v0c0,2.86667 -0.06,5.62667 -0.18,8.28c-0.12,2.64667 -0.18,5.19 -0.18,7.63zM273.371,142.947v0c1.2,0 2.25333,-0.24 3.16,-0.72c0.90667,-0.48 1.67,-1.05333 2.29,-1.72c0.62,-0.66667 1.12333,-1.34667 1.51,-2.04c0.38,-0.69333 0.64,-1.28 0.78,-1.76v0v-7.53c-2.76667,0 -5.03333,0.14333 -6.8,0.43c-1.77333,0.28667 -3.16,0.74333 -4.16,1.37c-1.00667,0.62 -1.7,1.39667 -2.08,2.33c-0.38,0.92667 -0.57,1.98667 -0.57,3.18v0c0,2.06 0.52333,3.65 1.57,4.77c1.05333,1.12667 2.48667,1.69 4.3,1.69zM335.381,144.737v1.79h-15.41v-1.79c1.28667,-0.67333 2.69333,-1.24667 4.22,-1.72v0v-16.99c0,-3.63333 -0.52333,-6.5 -1.57,-8.6c-1.05333,-2.10667 -2.96667,-3.16 -5.74,-3.16v0c-1.19333,0 -2.30333,0.21667 -3.33,0.65c-1.02667,0.42667 -1.93333,1.01333 -2.72,1.76c-0.79333,0.74 -1.47667,1.57333 -2.05,2.5c-0.57333,0.93333 -1.02667,1.90333 -1.36,2.91v0v20.93c1.48,0.28667 2.91333,0.86 4.3,1.72v0v1.79h-15.48v-1.79c1.19333,-0.62 2.77,-1.19333 4.73,-1.72v0v-28.17l-4.73,-0.58v-1.86c1.24,-0.52667 2.67333,-1.00333 4.3,-1.43c1.62667,-0.43333 3.32333,-0.81667 5.09,-1.15v0h1.79v8.03h0.07c1.00667,-2.2 2.45333,-4.08667 4.34,-5.66c1.88667,-1.58 4.17,-2.37 6.85,-2.37v0c1.90667,0 3.61333,0.22667 5.12,0.68c1.50667,0.45333 2.76,1.25333 3.76,2.4c1.00667,1.14667 1.77333,2.69 2.3,4.63c0.52667,1.93333 0.79,4.38 0.79,7.34v0v18.14c1.90667,0.33333 3.48333,0.90667 4.73,1.72zM357.741,138.357v0c0,-1.34 -0.41667,-2.47667 -1.25,-3.41c-0.84,-0.92667 -1.90333,-1.79667 -3.19,-2.61c-1.29333,-0.81333 -2.67,-1.60333 -4.13,-2.37c-1.45333,-0.76 -2.82667,-1.65667 -4.12,-2.69c-1.28667,-1.02667 -2.35,-2.20667 -3.19,-3.54c-0.83333,-1.34 -1.25,-2.99 -1.25,-4.95v0c0,-1.29333 0.3,-2.48667 0.9,-3.58c0.59333,-1.1 1.39333,-2.04667 2.4,-2.84c1,-0.78667 2.17,-1.40667 3.51,-1.86c1.34,-0.45333 2.77333,-0.68 4.3,-0.68v0c2.58,0 4.69333,0.14333 6.34,0.43c1.65333,0.28667 3.24333,0.69333 4.77,1.22v0c-0.19333,1.52667 -0.42,3.06667 -0.68,4.62c-0.26667,1.55333 -0.63667,3.14333 -1.11,4.77v0h-1.79l-2.73,-7.31c-0.57333,-0.24 -1.21667,-0.39667 -1.93,-0.47c-0.72,-0.07333 -1.46333,-0.11 -2.23,-0.11v0c-0.86,0 -1.61,0.15667 -2.25,0.47c-0.64667,0.31333 -1.19667,0.70667 -1.65,1.18c-0.45333,0.48 -0.8,1.03 -1.04,1.65c-0.24,0.62 -0.36,1.24 -0.36,1.86v0c0,1.29333 0.41667,2.40667 1.25,3.34c0.84,0.93333 1.90333,1.79333 3.19,2.58c1.29333,0.78667 2.67,1.56333 4.13,2.33c1.45333,0.76 2.82667,1.62 4.12,2.58c1.28667,0.95333 2.35,2.06333 3.19,3.33c0.83333,1.26667 1.25,2.78333 1.25,4.55v0c0,1.62667 -0.34667,3.08667 -1.04,4.38c-0.69333,1.28667 -1.64667,2.38333 -2.86,3.29c-1.22,0.90667 -2.63,1.61333 -4.23,2.12c-1.60667,0.5 -3.31667,0.75 -5.13,0.75v0c-2.05333,0 -3.94,-0.18 -5.66,-0.54c-1.72,-0.36 -3.51333,-0.87333 -5.38,-1.54v0c0.1,-1.72 0.31667,-3.38 0.65,-4.98c0.33333,-1.6 0.76333,-3.14 1.29,-4.62v0h1.79l3.15,7.81c0.52667,0.38 1.16,0.59333 1.9,0.64c0.74,0.05333 1.42333,0.08 2.05,0.08v0c2.1,0 3.79667,-0.57333 5.09,-1.72c1.28667,-1.14667 1.93,-2.53333 1.93,-4.16zM386.481,144.737v1.79h-15.91v-1.79c0.72,-0.38667 1.46,-0.71 2.22,-0.97c0.76667,-0.26 1.60333,-0.51 2.51,-0.75v0v-28.17l-4.73,-0.58v-1.86c1.38667,-0.57333 2.89333,-1.07333 4.52,-1.5c1.62,-0.43333 3.24333,-0.79333 4.87,-1.08v0h1.79v33.19c0.96,0.24 1.82,0.49 2.58,0.75c0.76667,0.26 1.48333,0.58333 2.15,0.97zM373.941,98.497v0c0,-1.28667 0.41667,-2.31333 1.25,-3.08c0.84,-0.76 1.95333,-1.14 3.34,-1.14v0c1.38667,0 2.48667,0.38 3.3,1.14c0.80667,0.76667 1.21,1.79333 1.21,3.08v0c0,1.29333 -0.40333,2.31 -1.21,3.05c-0.81333,0.74 -1.91333,1.11 -3.3,1.11v0c-1.38667,0 -2.5,-0.37 -3.34,-1.11c-0.83333,-0.74 -1.25,-1.75667 -1.25,-3.05z"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="social-logo">
+        <p>Find us in social media</p>
+        <div class="logo-container">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+      <div class="contact-us">
+        <p>Contact Us</p>
+        <p class="address">
+          Jl. Tomang Raya No. 38, Jatipulo Palmerah, Jakarta Barat 11430
+        </p>
+        <div class="info">
+          <p>
+            Telepon : <span><a href="#home">+62 821-1885-9286</a></span>
+          </p>
+          <p>Jam Kerja: Senin - Jumat 09.00-17.00</p>
+          <p>
+            Email : <span><a href="#home">cs@gmail.com</a></span>
+          </p>
+        </div>
+        <p>Tentang Kami</p>
+        <ul>
+          <li><a href="#home">Apa itu Axuransi?</a></li>
+          <li><a href="/pages/terms.html">Syarat dan Ketentuan</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./script/navbar.js" type="module"></script>
+    <script src="./script/home.js" type="module"></script>
+  </body>
+</html>
