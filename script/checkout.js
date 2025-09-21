@@ -1,4 +1,4 @@
-import { getParsedUser, isAuthenticated } from "./global.js";
+import { getParsedUser, isAuthenticated, logout } from "./global.js";
 
 //Mengambil komponen navbar
 const navNotAuth = document.querySelector(".notAuth");
@@ -122,7 +122,7 @@ function handlePurchase() {
   saveHistoryToLocalStorage(historyData);
   // 4. Beri tahu pengguna
   alert(
-    `Pembelian berhasil dicatat! Lanjutkan ke pembayaran.\nID Transaksi: ${newId}`
+    `Pembayaran sukses! Redirect ke History Pembelian.\nID Transaksi: ${newId}`
   );
   //5. Pindah halaman ke history dan hapus data cart product
   removeSelectedProduct();

@@ -1,4 +1,4 @@
-import { getParsedUser, isAuthenticated } from "./global.js";
+import { getParsedUser, isAuthenticated, logout } from "./global.js";
 
 //Mengambil komponen navbar
 const navNotAuth = document.querySelector(".notAuth");
